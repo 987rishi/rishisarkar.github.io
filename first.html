@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Learn</title>
+  <!-- Using CDN for bootstrap loading ------------------------------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ------------------------------------------------------------------ -->
+</head>
+<body style="height: 400vh;">
+    <div class="container pt-3">
+    <ul class="nav nav-pills nav-justified">
+        <li class="nav-item"><a class="nav-link active" data-bs-toggle="pill" href="#home">Home</a></li>
+        <li class="nav-item"><a href="#one" data-bs-toggle="pill" class="nav-link ">Link</a></li>
+        <li class="nav-item"><a href="#two" data-bs-toggle="pill" class="nav-link">Link1</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade" id="home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corrupti ea laboriosam animi accusantium rem autem fugit? Incidunt minima tempore libero possimus ducimus quidem aperiam fugiat sapiente laudantium. Rerum, tempora?</div>
+        <div class="tab-pane fade" id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolores ipsa repellat optio asperiores accusamus at excepturi tenetur voluptatibus deleniti? Accusantium voluptate magnam rerum aut ut quae eaque aliquam consequatur!</div>
+        <div class="tab-pane fade" id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rem maiores sint perferendis autem ad fugit amet dolore nihil sit aspernatur iusto architecto facilis inventore, asperiores repellat. Recusandae, error expedita.</div>
+    </div>
+
+</div>
+    <div class="container pt-5">
+        <h1 class="display-1 text-center">BOOTSTRAP</h1>
+        <p class="lead text-center">Fixed Width container</p>
+    </div>
+    <div class="container-fluid pt-5">
+        <h1>BOOTSTRAP</h1>
+        <p>FULL Width container</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 p-3 bg-primary text-white">1</div>
+            <div class="col-sm-6 p-3 bg-black text-white">2</div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+    <table class="table table-dark table-hover table-striped">
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>Rahul Paul</td>
+            <td>Male?</td>
+        </tr>
+        <tr>
+            <td>Subramula</td>
+            <td>Hexadecimal</td>
+        </tr> 
+        <tr class="table-danger ">
+            <td>Raj</td>
+            <td>Female</td>
+        </tr>
+    </table>
+    </div>
+    <div class="alert alert-dark container alert-dismissable fade show">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="alert"></button>
+        <strong>Raj</strong> is gay
+    </div>
+    <div class="container pb-4">
+        <button type="button" class="btn p-3 btn-outline-primary text-bg-color btn-lg" href="#"><span class=""></span>Agree</button>
+    </div>
+    <p class="text-center display-3">Level of gayness</p>
+    <div class="progress mx-auto " style="width:50%;height:3vw;">
+        <div class="progress-bar progress-bar-striped bg-primary progress-bar-animated " style="width:60%;">60%</div>
+        <div class="progress-bar progress-bar-animated bg-info " style="width: 40%;">40%</div>
+    </div>
+    
+    <ul class="list-group container">
+        <li class="list-group-item ">Number of girlfriends Raj has<span class="badge rounded-pill bg-primary float-end">-5</span></li>
+        <li class="list-group-item">Number of girlfriends Rahul has<span class="badge rounded-pill bg-primary float-end">GYM wala bhaiya</span> </li>
+        <li class="list-group-item">Number of girlfriends Subramula has <span class="badge rounded-pill bg-primary float-end">10000<sub>2</sub> (in 2's complement)</span></li>
+
+    </ul>
+    <br>
+    <div class="container ">
+        <ul class="pagination ">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+        </ul>
+    </div>
+    <div id="parent">
+        <div class="card mx-auto d-block" style="width: 50%;">
+            <div class="card-header">
+                <button class="btn" data-bs-toggle="collapse" data-bs-target="#collapse1">First collapse</button>
+            </div>
+            <div id="collapse1" class="collapse" data-bs-parent="#parent">
+                <div class="card-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere necessitatibus reprehenderit atque voluptas veritatis. Tempora quaerat placeat, quidem, vitae consequatur voluptatum numquam labore provident, earum eaque ipsa facere reprehenderit possimus!</div>
+            </div>
+
+        </div>
+        <div class="card mx-auto d-block" style="width: 50%;">
+            <div class="card-header">
+                <button class="btn" data-bs-toggle="collapse" data-bs-target="#collapse2">Second collapse</button>
+            </div>
+            <div id="collapse2" class="collapse" data-bs-parent="#parent">
+                <div class="card-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere necessitatibus reprehenderit atque voluptas veritatis. Tempora quaerat placeat, quidem, vitae consequatur voluptatum numquam labore provident, earum eaque ipsa facere reprehenderit possimus!</div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="carousel slide container" id="demo" data-bs-ride="carousel" style="width:30%;">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+        <button type="button"  data-bs-slide-to="0" data-bs-target="#demo" class="active"></button>
+        <button type="button"  data-bs-slide-to="1" data-bs-target="#demo"></button>
+        <button type="button"  data-bs-slide-to="2" data-bs-target="#demo"></button>
+    </div>
+    <!-- SLideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img class="d-block w-100 img-fluid" src=https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnVubnklMjBjYXR8ZW58MHx8MHx8fDA%3D" alt="cat-img">
+    </div>
+    <div class="carousel-item">
+        <img class="d-block w-100 img-fluid" src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVubnklMjBjYXR8ZW58MHx8MHx8fDA%3D" alt="cat-img">
+    </div>
+    <div class="carousel-item">
+    <img class="d-block w-100" src="https://images.unsplash.com/photo-1588768987479-bcebeefb8a5c?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZ1bm55JTIwY2F0fGVufDB8fDB8fHww" alt="cat-img">
+    </div>
+    </div>
+    <!-- For next prev butttons -->
+    <button type="button" class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    <button type="button" class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+    <!-- <br><br> -->
+    <!-- JS initialization for Tooltips --------------------------------------------------------------->
+    <!-- <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script> -->
+    <!--------------------------------- --x--x-- --------------------------------------------------- -->
+</body>
+</html>
